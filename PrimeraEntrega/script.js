@@ -52,10 +52,10 @@ function calcularTotal() {
 function confirmarTurno(total) {
     let confirmacion = confirm(`El total de tu turno es $${total}.\n¿Deseas confirmar la reserva?`);
     if (confirmacion) {
-        alert("✅ ¡Tu turno ha sido reservado!");
+        alert("¡Tu turno ha sido reservado!");
         console.log("Turno confirmado con éxito.");
     } else {
-        alert("❌ Has cancelado la reserva.");
+        alert("Has cancelado la reserva.");
         console.log("Reserva cancelada.");
     }
 }
@@ -68,3 +68,4 @@ console.log("Cliente:", nombreCliente);
 seleccionarServicios();
 let total = calcularTotal();
 confirmarTurno(total);
+
