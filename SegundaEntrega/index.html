@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador de Turnos - Peluquería</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Simulador de Turnos - Peluquería</h1>
+    <p>Reserva tus servicios y confirma tu turno</p>
+  </header>
+
+  <main class="container">
+    <!-- Formulario cliente -->
+    <section class="card">
+      <h2>Tus datos</h2>
+      <form id="form-cliente">
+        <label for="nombre">Nombre del cliente</label>
+        <input id="nombre" type="text" required placeholder="Ej: Sofía Sayago">
+        <button type="submit">Guardar nombre</button>
+      </form>
+      <p id="saludo"></p>
+    </section>
+
+    <!-- Servicios -->
+    <section class="card">
+      <h2>Servicios disponibles</h2>
+      <div id="lista-servicios" class="grid"></div>
+    </section>
+
+    <!-- Carrito -->
+    <section class="card">
+      <h2>Carrito de servicios</h2>
+      <ul id="carrito" class="list"></ul>
+      <p>Total: $<span id="total">0</span></p>
+      <button id="confirmar">Confirmar turno</button>
+      <p id="estado"></p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>Entrega N°2 - DOM, Eventos y LocalStorage</small>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

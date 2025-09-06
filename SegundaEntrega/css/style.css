@@ -1,0 +1,87 @@
+.servicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos */
+body {
+    background: linear-gradient(135deg, #f8b6d2, #a3d8f4);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    color: #222;
+    text-align: center;
+}
+
+/* Párrafos */
+p {
+    max-width: 600px;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+/* Botones */
+button {
+    background: #ff7ea5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #ff5180;
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    .container {
+        padding: 15px;
+    }
+    button {
+        width: 100%;
+    }
+}
