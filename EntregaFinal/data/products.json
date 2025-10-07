@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "nombre": "Auriculares Bluetooth",
+    "precio": 35000,
+    "categoria": "Audio",
+    "stock": 12,
+    "descripcion": "Auriculares inalámbricos con cancelación ligera.",
+    "image": "img/auriculares.jpg",
+    "imageUrl": "https://img.freepik.com/psd-gratis/auriculares-levitantes-bodegon_23-2150806967.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Smartwatch Deportivo",
+    "precio": 20000,
+    "categoria": "Wearables",
+    "stock": 7,
+    "descripcion": "Monitoreo cardíaco y notificaciones.",
+    "image": "img/smartwatch.jpg",
+    "imageUrl": "https://acdn-us.mitiendanube.com/stores/001/145/546/products/w17-final-d10e76d756e216785417020688225996-1024-1024.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Cargador USB-C 65W",
+    "precio": 5000,
+    "categoria": "Accesorios",
+    "stock": 20,
+    "descripcion": "Carga rápida para notebooks y teléfonos.",
+    "image": "img/cargador.jpg",
+    "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_702437-MLA74852749513_032024-O.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Teclado Mecánico",
+    "precio": 45000,
+    "categoria": "Periféricos",
+    "stock": 5,
+    "descripcion": "Switches táctiles, retroiluminación RGB.",
+    "image": "img/teclado.jpg",
+    "imageUrl": "https://hard-digital.com.ar/public/files/Teclado%20Mecanico%20Redragon%20Horus%20Tkl%20Rgb%20Blanco%20Switch%20Red/7.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Parlante Bluetooth",
+    "precio": 95000,
+    "categoria": "Audio",
+    "stock": 9,
+    "descripcion": "Sonido potente para exteriores.",
+    "image": "img/parlante.jpg",
+    "imageUrl": "https://acdn-us.mitiendanube.com/stores/356/280/products/4701-parlante-inalambrico-portatil-bluetooth-tg-tg-109-soporta-usb-microusb-aux-azul_31-59ebabb78c193d7f8116359675164311-640-0.jpg"
+  }
+]

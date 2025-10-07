@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ProyectoFinal - Simulador Ecommerce </title>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Font Awesome (íconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header container">
+    <div class="logo">
+      <i class="fa-solid fa-store"></i>
+      <h1>Tech Gamer</h1>
+    </div>
+    <div class="header-actions">
+      <div class="search-box">
+        <input id="buscar" type="search" placeholder="Buscar productos..." />
+      </div>
+      <div class="cart-icon">
+        <button id="btn-open-cart" title="Ver carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+        <span id="cart-count" class="badge">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout container">
+    <!-- Catálogo -->
+    <section class="card catalog">
+      <div class="catalog-controls">
+        <select id="filtro-categoria">
+          <option value="">Todas las categorías</option>
+        </select>
+      </div>
+
+      <div id="productos" class="grid"></div>
+    </section>
+
+    <!-- Sidebar (usuario / carrito / historial) -->
+    <aside class="card sidebar">
+      <h2>Tu info</h2>
+      <form id="form-usuario" autocomplete="on">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required placeholder="Ej: Sofía Sayago">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="ejemplo@mail.com">
+
+        <label for="direccion">Dirección</label>
+        <input id="direccion" name="direccion" type="text" placeholder="Calle, número, ciudad">
+
+        <button id="guardar-datos" type="button">Guardar datos</button>
+      </form>
+
+      <hr>
+
+      <h3>Carrito</h3>
+      <ul id="lista-carrito" class="list"></ul>
+      <p class="total">Total: $<span id="monto-total">0</span></p>
+
+      <div class="sidebar-actions">
+        <button id="vaciar-carrito" class="danger">Vaciar carrito</button>
+        <button id="checkout">Simular pago</button>
+      </div>
+
+      <hr>
+
+      <h4>Historial</h4>
+      <ul id="historial" class="list small"></ul>
+      <button id="limpiar-historial" class="danger small">Limpiar historial</button>
+    </aside>
+
+
+
+  <footer class="site-footer container">
+    <small>ProyectoFinal - Simulador Ecommerce</small>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
